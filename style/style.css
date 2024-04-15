@@ -5,20 +5,25 @@
 
 header a {
   font-family: "Krona One";
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   justify-content: center;
   gap: 80px;
   font-weight: 400;
   height: 200px;
-  color: #f6f6f6;
+  color: #c2c2c2;
   padding: 1% 0% 6% 8%;
   line-height: 156px;
   text-decoration: none;
 }
 
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
 header a:hover {
-  color: #22d4fd;
+  color: #3d3faf;
 }
 
 body {
@@ -30,7 +35,28 @@ body {
   height: 100vh;
   box-sizing: border-box;
   width: 100%;
+  background-image: url(/assets/19122020-IMG_0748_Dfotografia_71\ 991453825.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Adicionando esta linha */
+  background-position: center; /* Opcional: centraliza a imagem */
   display: inline-flexbox;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #121214;
+}
+
+.banner {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  min-height: 100vh;
 }
 
 .apresentacao {
@@ -41,77 +67,94 @@ body {
 }
 
 .apresentacao__conteudo {
-  width: 615px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  background-color: #c7ab86;
+  gap: 20px;
 }
 
 .apresentacao__conteudo__titulo {
   font-family: "Krona One";
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 56px;
+  line-height: 3.5rem;
 }
 
 .apresentacao__conteudo__texto {
   margin: 10px;
   padding: 5px;
   font-family: "Montserrat";
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
 }
 
 .titulo-destaque {
-  color: #22d4fd;
+  color: #020453;
+  padding-top: 4.2rem;
 }
 
 .subtitulo {
   font-family: "Krona One";
-  font-size: 24px;
-  text-align: justify;
+  font-size: 1.5rem;
+  display: flex;
+  position: absolute;
+  margin-bottom: 9rem;
+  text-align: center;
 }
-img {
-  width: 467.705px;
-  height: 900px;
+
+.images {
+  margin: 0 auto;
+  width: 50%;
+  justify-content: center;
 }
 
 .apresentacao__links {
-  justify-content: space-between;
+  justify-content: flex-start;
   display: flex;
-  gap: 20px;
+  gap: 70px;
+  margin-top: 5rem;
   flex-direction: row;
   align-items: center;
-  padding-right: 2%;
+  padding-right: 1%;
 }
 
 .logo {
-  width: 30px;
+  width: 2.5rem;
   height: auto;
 }
+
 .apresentacao__links__botton1 {
-  /* background-color: #22d4fd; */
-  background-color: transparent;
-  border: 2px solid #22d4fd;
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: #f6f6f6;
   display: flex;
-  justify-content: center;
-  text-decoration: none;
-  width: 150px;
-  gap: 16px;
-  border-radius: 16px;
-  flex-direction: column;
+  width: 50%;
+  gap: 1.2rem;
+  flex-direction: row-reverse;
   align-items: center;
-  padding: 21.5px 0;
+  padding: 1%;
+  border-radius: 12px;
 }
 
 .apresentacao__links__botton1:hover {
-  color: #22d4fd;
-  border-color: white;
+  animation: bounce 2s;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
