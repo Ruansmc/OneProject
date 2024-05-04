@@ -13,3 +13,7 @@
 - Fiz o portfólio de acordo com a minha experiência. Passei por uma transição de carreira tem 9 meses, diante dessa experiência e do aprendizado, tive a ideia de colocar a minha vivência nele.
 
 ---
+### O que utilizei para construção do projeto:
+
+HTML - Javascript - Tailwind.
+
