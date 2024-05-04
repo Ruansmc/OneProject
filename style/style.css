@@ -4,7 +4,7 @@
 }
 
 header a {
-  font-family: "Krona One";
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-style: normal;
   justify-content: center;
@@ -23,7 +23,7 @@ header a {
 }
 
 header a:hover {
-  color: #3d3faf;
+  color: #6c6da1;
 }
 
 body {
@@ -35,12 +35,13 @@ body {
   height: 100vh;
   box-sizing: border-box;
   width: 100%;
-  background-image: url(/assets/19122020-IMG_0748_Dfotografia_71\ 991453825.jpg);
+  background-repeat: url(/assets/27239-362518579_tiny.mp4);
   background-repeat: no-repeat;
   background-size: cover; /* Adicionando esta linha */
   background-position: center; /* Opcional: centraliza a imagem */
   display: inline-flexbox;
 }
+
 body::before {
   content: "";
   width: 100%;
@@ -50,6 +51,16 @@ body::before {
   left: 0;
   z-index: -1;
   background: #121214;
+}
+
+video {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .banner {
@@ -66,11 +77,14 @@ body::before {
   margin: 10% 19%;
 }
 
+.apresentacao__conteudo:hover {
+  animation: bounce 2s;
+}
+
 .apresentacao__conteudo {
   width: 50%;
   display: flex;
   flex-direction: column;
-  background-color: #c7ab86;
   gap: 20px;
 }
 
@@ -80,6 +94,12 @@ body::before {
   font-style: normal;
   font-weight: 400;
   line-height: 3.5rem;
+}
+
+.apresentacao__conteudo {
+  display: flex;
+  line-height: 12px;
+  align-items: center;
 }
 
 .apresentacao__conteudo__texto {
@@ -93,7 +113,7 @@ body::before {
 }
 
 .titulo-destaque {
-  color: #020453;
+  color: #dadadb;
   padding-top: 4.2rem;
 }
 
@@ -135,6 +155,7 @@ body::before {
   align-items: center;
   padding: 1%;
   border-radius: 12px;
+  background-color: #dadadb;
 }
 
 .apresentacao__links__botton1:hover {

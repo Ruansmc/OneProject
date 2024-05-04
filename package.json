@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "swiper": "^11.1.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "name": "portfolio_front",
+  "description": "Primeiro Portfólio - Alura\r ![image](https://github.com/Ruansmc/Alura/assets/86540031/535b1f6b-03ee-46fd-8283-98ae2d44d577)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
