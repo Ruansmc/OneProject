@@ -17,3 +17,6 @@
 
 HTML - Javascript - Tailwind.
 
+Caso queira acessar o projeto:
+
+https://challenge-six-orcin.vercel.app
