@@ -3,7 +3,8 @@
 ---
 
 <p align="center" >
-  ![image](https://github.com/Ruansmc/Alura/assets/86540031/b6517f51-72c5-4569-a8c4-4a770be1ced9)
+
+![Captura de tela 2024-05-03 212020](https://github.com/Ruansmc/Alura/assets/86540031/db856162-b44e-42da-966a-8d26b0070318)
 
 </p>
 
