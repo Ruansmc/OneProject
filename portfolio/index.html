@@ -16,12 +16,35 @@
 
     <title>Portifólio Pessoal</title>
 </head>
-<body class="box-border w-screen mx-auto overflow-hidden overflow-y-auto text-sm conteiner sm:text-base md:text-lg lg:text-xl ">
+<body class="box-border p-* w-screen mx-auto overflow-hidden overflow-y-auto text-sm light-mode conteiner sm:text-base md:text-lg lg:text-xl ">
+    <button onclick="toggleMode()" class="fixed z-10 px-3 py-1 text-white bg-white rounded w-15 top-4 right-4"><img width="30" height="50" src="https://img.icons8.com/ios/50/day-and-night.png" alt="day-and-night"/></button>
 
+    <script>
+        function toggleMode() {
+          const body = document.querySelector('body');
+          body.classList.toggle('dark-mode');
+     
+        }
+        </script>
+        <style>
+            /* Estilos para o modo escuro */
+            .dark-mode {
+              background-color: #1a202c;
+              color: #e2e8f0;
+            }
+            
+            .dark-mode button {
+              background-color: #2d3748;
+            }
+              .dark-mode .dark-mode-bg {
+        background-color: #2d3748; /* Cor de fundo escura para as divs */
+        color: #e2e8f0; /* Cor de texto clara para as divs */
+    }
+            </style>
     <!-- Sessão de Menu  -->
         <header class="scroll-smooth">
-            <nav class="flex justify-center items-center min-h-[70px] bg-gray-700 text-white p-6 lg:px-8">
-                <ul class="flex flex-row gap-2 md:gap-6 lg:gap-12">
+            <nav class="gap-12 flex justify-center items-center min-h-[70px] bg-gray-700 text-white p-6 lg:px-8">
+                <ul class="flex flex-row gap-2 px-8 md:gap-6 lg:gap-12">
                     <li class="text-sm font-semibold leading-6 md:text-base lg:text-lg hover:font-bold"><a href="#sobremim">Sobre mim</a></li>
                     <li class="text-sm font-semibold leading-6 md:text-base lg:text-lg hover:font-bold"><a href="#skills">Skills</a></li>
                     <li class="text-sm font-semibold leading-6 md:text-base lg:text-lg hover:font-bold"><a href="#xp">Experiência</a></li>
@@ -48,7 +71,7 @@
                     
         <!-- Sessão sobre mim -->
 
-        <div class="max-w-2xl p-8 mx-auto mt-16 bg-gray-100 sm:p-10 lg:flex lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 log:flex lg:max-w-none">
+        <div class="max-w-2xl p-8 mx-auto mt-16 bg-gray-100 dark-mode-bg sm:p-10 lg:flex lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 log:flex lg:max-w-none">
             <img class="order-2 w-full rounded-lg sm:w-auto lg:w-1/3 lg:order-1" src="assets/8e81710f04093a1040c2a5644a200af5c03a9bed_high.webp">
             <div class="p-8 lg:w-2/3 sm:p-10 lg:order-2">
                 <h3 class="mb-8 text-4xl font-bold tracking-tight text-center text-gray-900 sm:text-6xl" id="sobremim">Sobre mim</h3>
@@ -68,8 +91,11 @@
                          <!-- <ion-icon name="logo-linkedin"></ion-icon> -->
                          <img src="assets/372102050_LINKEDIN_ICON_TRANSPARENT_1080.gif" alt="link do linkedIn" width="40px" >    
                         </a>
-               <button class="align-center transition  hover:-translate-y-1 hover:scale-110 hover:bg-grey-500 duration-300 text-center 
-               rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-grey-600"> <a href="https://drive.google.com/file/d/1LU7fDEekL88bZe0ykYPnqUnYtF5Zx9f5/view?usp=sharing" download="meu-arquivo.pdf">Baixe meu CV</a></button>
+                        <button class="align-center transition hover:-translate-y-1 hover:scale-110 hover:bg-grey-500 duration-300 text-center rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-grey-600">
+                            <a href="https://drive.google.com/file/d/1L3WW_yyHyjVhH3MQwUgHXxbfR7PUeE4l/view?usp=sharing" download="meu-arquivo.pdf" class="text-white">
+                              Baixe meu CV
+                            </a>
+                          </button>
             </div>
             </ul>
         </div>
@@ -78,44 +104,52 @@
 
 <!-- Sessão de Skills/Habilidades -->
 
-<div class="max-w-2xl p-8 mx-auto mt-16 bg-gray-100 sm:p-10 lg:flex-auto lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 log:flex lg:max-w-none">
+<div class="max-w-2xl p-8 mx-auto mt-16 bg-gray-100 dark-mode-bg sm:p-10 lg:flex-auto lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 log:flex lg:max-w-none">
+
     <div class="p-8 sm:p-10 lg:flex-auto">
         
         <h3 class="text-4xl font-bold tracking-tight text-center text-gray-900 sm:text-6xl" id="skills">Skills</h3>
-            <div class="grid items-center m-2 justify-items-center gap-x-8">
+        
+        <div class="grid items-center m-2 justify-items-center gap-x-8">
                     
-                <ul class="flex p-2 my-4 flex-nowra center place-content-center">
+            <ul class="flex p-2 mx-10 my-4 flex-nowra center place-content-center">
                       
-                    <li class="bottom-0 text-center ">
-                        <img class="w-14 p-1 gap-4 space-y-[15px]" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
-                        <span class="ml-2">Html 5</span>
-                    </li>
+                <li class="bottom-0 text-center">
+                    <img class="object-contain p-1 w-14 h-14" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                    <span class="ml-2 text-center">Html5</span>
+                </li>
 
-                    <li class="bottom-0 text-center ">
-                        <img class="p-1 w-14"  src="assets/icons8-javascript.gif" alt="JavaScript"/>
-                        <span class="ml-2">JavaScript</span>
-                    </li>
+                <li class="bottom-0 text-center">
+                    <div class="flex flex-col items-center">
+                    <img class="object-contain w-14 h-14" src="assets/icons8-javascript-144.png" alt="">
+                    <span class="block ml-2">JavaScript</span>
+                </div>
+                </li>
                  
-                    <li class="bottom-0 text-center ">
-                        <img src="assets/images.png" alt="React" width="60px">
-                        <span class="ml-2">React</span>
-                    </li>
+                <li class="bottom-0 text-center">
+                    <div class="flex flex-col items-center">
+                    <img class="object-contain w-14 h-14" src="assets/icons8-react-160.png" alt="">
+                    <span class="ml-2">React</span>
+                    </div>
+                </li>
          
-                    <li class="bottom-0 text-center">
-                        <img width="60" height="60" src="https://img.icons8.com/stickers/100/css3.png" alt="CSS3"/>
-                        <span class="ml-2">CSS</span>
-                    </li>
-                </ul>
-                <img class="rounded-lg flex-center max-w-196 center xl:max-w-lg" src="assets/498a3be78adddb477f00c36271fc96371075c7a3_high.webp" alt="imagem de um homem negro estudando">
-          
-              
+                <li class="bottom-0 text-center">
+                    <div class="flex flex-col items-center">
+                    <img class="object-contain w-14 h-14" src="assets/icons8-css3-240.png" alt="">
+                    <span class="ml-2 text-center">CSS</span>
+                    </div>
+                </li>
+            </ul>
+
+            <img class="object-cover rounded-lg max-w-196 xl:max-w-lg" src="assets/498a3be78adddb477f00c36271fc96371075c7a3_high.webp" alt="imagem de um homem negro estudando">
         </div>
     </div>
 </div>
 
 <!-- Sessão de Experiência Profissional/Projetos -->
-<div class="max-w-2xl mx-auto mt-16 mb-8 bg-gray-100 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+<div class="max-w-2xl p-8 mx-auto mt-16 mb-8 bg-gray-100 dark-mode-bg sm:p-10 lg:flex-auto lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
     <div class="lg:flex-auto lg:flex">
+      
         <div class="p-8 sm:p-10 lg:flex-auto">
             <h2 class="text-4xl font-bold tracking-tight text-center text-gray-900 sm:text-6xl" id="xp">Experiência Profissional</h2>
             <div class="experiencie__box">
@@ -125,7 +159,8 @@
                     <h2 class="experience__title">Hub do Bombeiro</h2>
                     <h3 class="experience__text">DMT - Corpo de Bombeiros </h3>
                     <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <img src="assets/Captura de tela 2024-04-29 183220.png" class="py-2 hover:-translate-y-1 rounded-[12px]" alt="">
+                    <img src="assets/CBM.png" class="py-2 hover:-translate-y-1 rounded-[12px]" alt="">
+                    <img class="py-2 hover:-translate-y-1 rounded-[12px]" src="assets/CBM2.png" alt="">
                     <button class="px-4 transition bg-grey-400 hover:-translate-y-1 duration-300 text-center border border-slate-700  rounded-md bg-indigo-600 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline-offset-2 focus-visible:outline-indigo-60">Repositório Privado</button>
                 </div>
             </div>  
@@ -159,24 +194,28 @@
     </div>
 </div>
        <!-- Botão -->
-       <button onclick="topFunction()" id="scrollTopBtn" title="Voltar ao topo" class="fixed z-50 hidden p-4 text-white bg-gray-900 rounded-full shadow-lg lg:inline-block bottom-4 right-4">
+       
+       <button onclick="topFunction()" id="scrollTopBtn" title="Voltar ao topo" class="fixed z-50 hidden p-4 text-white bg-gray-900 rounded-full shadow-lg animate-bounce lg:inline-block bottom-4 right-4">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
     </button>
+    
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0; // Para navegadores da web
+            document.documentElement.scrollTop = 0; // Para navegadores modernos
+        }
+    </script>
+    </button>
         <!-- Sessão de Footer/Rodapé-->
            
-        <section class="flex justify-center items-center min-h-[70px] bg-gray-700 text-white text-center">
+        <section class="flex justify-center items-center min-h-[70px] bg-gray-700 text-white text-center mt-8">
             <div class="footer__rodape">
-                <p class="text-sm font-light ">Designed by Alura and built by Ruan Carvalho. All rights reserved - 2024.</p>
-
+                <p class="text-sm font-light">Designed by Alura and built by Ruan Carvalho. All rights reserved - 2024.</p>
             </div>
-          
-    </div>
         </section>
      
-     
-    </section>
     <!-- Script Linkado do seu documento de JavaScript -->
 </body>
 </html>

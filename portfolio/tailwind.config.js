@@ -19,3 +19,9 @@ module.exports = {
     },
   },
 };
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "selector",
+  // ...
+};
