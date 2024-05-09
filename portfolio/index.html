@@ -16,8 +16,11 @@
 
     <title>Portifólio Pessoal</title>
 </head>
-<body class="box-border p-* mr-4 w-screen mx-auto overflow-hidden overflow-y-auto text-sm light-mode conteiner sm:text-base md:text-lg lg:text-xl ">
-    <button onclick="toggleMode()" class="fixed z-10 px-3 py-1 text-white bg-white rounded w-15 top-4 right-4"><img width="30" height="50" src="https://img.icons8.com/ios/50/day-and-night.png" alt="day-and-night"/></button>
+<body class="box-border p-* mx-auto overflow-y-auto text-sm light-mode">
+  
+    <button onclick="toggleMode()" class="fixed z-10 w-12 px-3 py-1 text-white bg-white rounded sm:max-w sm:w-15 top-4 right-4">
+        <img class="m-0 sm:p-0" width="30" height="50" src="https://img.icons8.com/ios/50/day-and-night.png" alt="day-and-night"/>
+    </button>
 
     <script>
         function toggleMode() {
@@ -38,7 +41,7 @@
             }
               .dark-mode .dark-mode-bg {
         background-color: #2d3748; /* Cor de fundo escura para as divs */
-        color: #e2e8f0; /* Cor de texto clara para as divs */
+        color: #e2e8f0; 
     }
             </style>
     <!-- Sessão de Menu  -->
@@ -104,16 +107,12 @@
 
 <!-- Sessão de Skills/Habilidades -->
 
-<div class="p-8 mx-auto mt-16 bg-gray-100 dark-mode-bg sm:p-10 lg:flex-auto lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 log:flex lg:max-w-none lg:mr-6 ">
 
-    <div class="p-8 sm:p-10 lg:flex-auto">
-        
+
+<div class="max-w-2xl p-4 mx-auto mt-16 bg-gray-100 dark-mode-bg sm:p-10 lg:flex lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 log:flex lg:mr-6 lg:max-w-none">
         <h3 class="text-4xl font-bold tracking-tight text-center text-gray-900 sm:text-6xl" id="skills">Skills</h3>
-        
         <div class="grid items-center m-2 justify-items-center gap-x-8">
-                    
             <ul class="flex p-2 mx-10 my-4 flex-nowra center place-content-center">
-                      
                 <li class="bottom-0 text-center">
                     <img class="object-contain p-1 w-14 h-14" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
                     <span class="ml-2 text-center">Html5</span>
@@ -141,10 +140,11 @@
                 </li>
             </ul>
 
-            <img class="object-cover rounded-lg max-w-196 xl:max-w-lg" src="assets/498a3be78adddb477f00c36271fc96371075c7a3_high.webp" alt="imagem de um homem negro estudando">
+                       <img class="object-cover h-auto max-w-full rounded-lg lg:max-w-196 xl:max-w-lg" src="assets/498a3be78adddb477f00c36271fc96371075c7a3_high.webp" alt="imagem de um homem negro estudando">
+
         </div>
     </div>
-</div>
+
 
 <!-- Sessão de Experiência Profissional/Projetos -->
 <div class="max-w-2xl p-8 mx-auto mt-16 mb-8 bg-gray-100 dark-mode-bg sm:p-10 lg:flex-auto lg:ml-8 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none lg:mr-6 ">
