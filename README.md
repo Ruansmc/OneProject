@@ -1,4 +1,4 @@
-# Challenge ONE | Front End - Portfólio
+# Front End - Portfólio
 
 ---
 
